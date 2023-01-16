@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,16 +10,16 @@
     <meta content="Free Website Template" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="{% static 'img/favicon.ico' %}" rel="icon">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Flaticon Font -->
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="{% static 'lib/flaticon/font/flaticon.css' %}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="{% static 'css/style.min.css' %}" rel="stylesheet">
 </head>
 
 <body class="bg-white">
@@ -117,7 +118,7 @@
     <div class="container py-5">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <img class="img-fluid mb-4 mb-lg-0" src="img/about.jpg" alt="Image">
+                <img class="img-fluid mb-4 mb-lg-0" src="{% static 'img/about.jpg' %}" alt="Image">
             </div>
             <div class="col-lg-6">
                 <h2 class="display-4 font-weight-bold mb-4">10 Years Experience</h2>
@@ -201,7 +202,7 @@
             <div class="col-md-6 mb-5">
                 <div class="row align-items-center">
                     <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="img/feature-2.jpg" alt="Image">
+                        <img class="img-fluid mb-3 mb-sm-0" src="{% static 'img/feature-2.jpg' %}" alt="Image">
                         <i class="flaticon-training"></i>
                     </div>
                     <div class="col-sm-7">
@@ -213,7 +214,7 @@
             <div class="col-md-6 mb-5">
                 <div class="row align-items-center">
                     <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="img/feature-3.jpg" alt="Image">
+                        <img class="img-fluid mb-3 mb-sm-0" src="{% static 'img/feature-3.jpg' %}" alt="Image">
                         <i class="flaticon-trends"></i>
                     </div>
                     <div class="col-sm-7">
@@ -225,7 +226,7 @@
             <div class="col-md-6 mb-5">
                 <div class="row align-items-center">
                     <div class="col-sm-5">
-                        <img class="img-fluid mb-3 mb-sm-0" src="img/feature-4.jpg" alt="Image">
+                        <img class="img-fluid mb-3 mb-sm-0" src="{% static 'img/feature-4.jpg' %}" alt="Image">
                         <i class="flaticon-support"></i>
                     </div>
                     <div class="col-sm-7">
@@ -831,7 +832,7 @@
     <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 
 </html>
